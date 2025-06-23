@@ -1,42 +1,54 @@
 {
-  "name": "ngx-text-overflow-clamp",
-  "version": "0.0.1",
-  "description": "An Angular 4+ wrapper for text-overflow-clamp",
+  "name": "ngx-text-overflow-clamp-v2",
+  "version": "2.0.0",
+  "description": "An Angular 20+ wrapper for text-overflow-clamp",
   "main": "index.js",
   "scripts": {
-    "test": "test",
-    "lint": "npm run tslint \"src/*.ts\"",
-    "tslint": "tslint",
-    "prepublish": "npm run cleanup && npm run lint && ngc && copyfiles -f src/*.js src/*.js.map src/*.d.ts src/*.metadata.json ./dist",
-    "cleanup": "del src/*.js *.js src/*.js.map *.js.map src/*.d.ts *.d.ts src/*.metadata.json *.metadata.json src/*.ngsummary.json *.ngsummary.json"
+    "build": "ng-packagr -p ng-package.json",
+    "test": "ng test",
+    "lint": "ng lint",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mbenzenhoefer/ngx-text-overflow-clamp.git"
+    "url": "git+https://github.com/raazatul7/ngx-text-overflow-clamp-v2.git"
   },
   "keywords": [
+    "angular",
+    "angular20",
     "ellipsis",
     "clamp",
     "overflow",
-    "dots"
+    "dots",
+    "text-overflow"
   ],
-  "author": "Moritz Benzenhöfer",
+  "author": "Atul Raj Gupta (@raazatul7)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mbenzenhoefer/ngx-text-overflow-clamp/issues"
+    "url": "https://github.com/raazatul7/ngx-text-overflow-clamp-v2/issues"
   },
-  "homepage": "https://github.com/mbenzenhoefer/ngx-text-overflow-clamp#readme",
+  "homepage": "https://github.com/raazatul7/ngx-text-overflow-clamp-v2#readme",
+  "peerDependencies": {
+    "@angular/core": "^20.0.0",
+    "@angular/common": "^20.0.0",
+    "text-overflow-clamp": "^1.0.0"
+  },
   "devDependencies": {
-    "@angular/core": "^4.4.6",
-    "@angular/compiler": "^4.4.6",
-    "@angular/compiler-cli": "^4.4.6",
-    "copyfiles": "^1.2.0",
-    "del-cli": "^1.0.0",
-    "rxjs": "5.4.3",
-    "tslint": "^5.2.0",
-    "typescript": "~2.5.3"
+    "@angular/core": "^20.0.4",
+    "@angular/common": "^20.0.4",
+    "@angular/compiler": "^20.0.4",
+    "@angular/compiler-cli": "^20.0.4",
+    "@angular/cli": "^20.0.0",
+    "@angular-devkit/build-angular": "^20.0.0",
+    "ng-packagr": "^20.0.0",
+    "typescript": "~5.8.0",
+    "rxjs": "~7.8.0",
+    "zone.js": "~0.15.0"
   },
   "dependencies": {
-    "text-overflow-clamp": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=20.11.1",
+    "npm": ">=10.0.0"
   }
 }
