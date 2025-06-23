@@ -1,8 +1,8 @@
 {
   "name": "ngx-text-overflow-clamp-v2",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "An Angular 20+ wrapper for text-overflow-clamp",
-  "main": "index.js",
+  "main": "fesm2022/ngx-text-overflow-clamp-v2.mjs",
   "scripts": {
     "build": "ng-packagr -p ng-package.json",
     "test": "ng test",
@@ -29,23 +29,24 @@
   },
   "homepage": "https://github.com/raazatul7/ngx-text-overflow-clamp-v2#readme",
   "peerDependencies": {
-    "@angular/core": "^20.0.0",
     "@angular/common": "^20.0.0",
+    "@angular/core": "^20.0.0",
     "text-overflow-clamp": "^1.0.0"
   },
   "devDependencies": {
-    "@angular/core": "^20.0.4",
+    "@angular-devkit/build-angular": "^20.0.0",
+    "@angular/cli": "^20.0.0",
     "@angular/common": "^20.0.4",
     "@angular/compiler": "^20.0.4",
     "@angular/compiler-cli": "^20.0.4",
-    "@angular/cli": "^20.0.0",
-    "@angular-devkit/build-angular": "^20.0.0",
+    "@angular/core": "^20.0.4",
     "ng-packagr": "^20.0.0",
-    "typescript": "~5.8.0",
     "rxjs": "~7.8.0",
+    "typescript": "~5.8.0",
     "zone.js": "~0.15.0"
   },
   "dependencies": {
+    "ngx-text-overflow-clamp-v2": "file:dist/ngx-text-overflow-clamp-v2"
   },
   "engines": {
     "node": ">=20.11.1",
