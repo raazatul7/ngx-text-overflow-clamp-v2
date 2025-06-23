@@ -1,6 +1,6 @@
 {
-  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/ngx-text-overflow-clamp-v2",
+  "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "dist/ngx-text-overflow-clamp-v2",
   "lib": {
     "entryFile": "lib/index.ts"
   },
