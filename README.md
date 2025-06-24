@@ -1,3 +1,8 @@
+# 🚧 Library Status
+
+⚠️ **This library has issues and is currently under progress.**  
+Please use it with caution or wait for stable release updates.
+
 # ngx-text-overflow-clamp-v2: Angular 20+ wrapper for [text-overflow-clamp](https://github.com/joshgillies/text-overflow-clamp)
 
 [![npm version](https://badge.fury.io/js/ngx-text-overflow-clamp-v2.svg)](https://www.npmjs.com/package/ngx-text-overflow-clamp-v2)
